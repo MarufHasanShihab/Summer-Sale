@@ -11,6 +11,7 @@ function handleClick(target) {
   const li = document.createElement("li");
   li.innerText = cardTitle;
   selectedIteams.appendChild(li);
+  selectedIteams.style.height = "400px"
   totalPrice.innerText = parseFloat(totalPrice.innerText) + parseFloat(target.childNodes[3].childNodes[5].childNodes[0].innerText);
   if (totalPrice.innerText >= 200) {
     applyButton.removeAttribute("disabled");
