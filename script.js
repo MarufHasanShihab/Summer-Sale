@@ -11,10 +11,7 @@ function handleClick(target) {
   const li = document.createElement("li");
   li.innerText = cardTitle;
   selectedIteams.appendChild(li);
-  selectedIteams.removeChild(selectedIteams.childNodes[3])
-  totalPrice.innerText =
-    parseFloat(totalPrice.innerText) +
-    parseFloat(target.childNodes[3].childNodes[5].childNodes[0].innerText);
+  totalPrice.innerText = parseFloat(totalPrice.innerText) + parseFloat(target.childNodes[3].childNodes[5].childNodes[0].innerText);
   if (totalPrice.innerText >= 200) {
     applyButton.removeAttribute("disabled");
     applyButton.style.cursor = "pointer";
@@ -24,7 +21,6 @@ function handleClick(target) {
     makePurchaseBtn.style.cursor = "pointer";
   }
 }
-
 applyButton.addEventListener("click", function () {
   if (coponInputField.value === "SELL200") {
     calculateDiscount();
