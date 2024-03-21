@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+li {
+  color: #111;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 200% */
+  list-style: decimal;
+}
+#selected-iteams {
+  width: 300px;
+  height: 400px;
+  overflow: auto;
+  border: 2px solid silver;
+  padding: 15px;
+  border-radius: 5px;
+}
